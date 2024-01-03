@@ -25,10 +25,11 @@ const Card = (props) => {
             toast.success("Liked Successfully");
         }
     }
+    console.log(Object.values(props.course.image));
 
     return (
         <div className='bg-bgDark bg-opacity-80 w-[300px] rounded-md overflow-hidden'>
-            {/* <div className='relative '>
+            <div className='relative '>
                 <img src={props.course.image.url} alt="Course Image" className='' />
 
                 <div className='rounded-full w-[40px] h-[40px] bg-white absolute right-2 bottom-[-12px] grid place-items-center'>
@@ -38,12 +39,11 @@ const Card = (props) => {
                         }
                     </button>
                 </div>
-            </div> */}.
-            hello
+            </div>
 
 
 
-            {/* <div className='p-4'>
+            <div className='p-4'>
                 <p className='text-white text-lg font-semibold leading-6'>{props.course.title}</p>
                 <p className='mt-2 text-white'>
                     {
@@ -51,7 +51,7 @@ const Card = (props) => {
                     }
 
                 </p>
-            </div> */}
+            </div>
 
         </div>
     )
